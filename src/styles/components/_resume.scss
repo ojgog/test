@@ -1,0 +1,135 @@
+@use '../base/variables' as *;
+
+.resume {
+  display: flex;
+  background: $color-background;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: $border-radius;
+  overflow: hidden;
+  animation: scaleIn 0.6s ease-out;
+  max-width: 1200px;
+  width: 100%;
+  margin: 2rem;
+
+  &__sidebar {
+    flex: 0 0 300px;
+    padding: $spacing-unit * 2;
+    background: $color-accent;
+    animation: slideIn 0.8s ease-out;
+
+    &-image {
+      width: 100%;
+      border-radius: $border-radius;
+      margin-bottom: $spacing-unit * 2;
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+
+    &-contact {
+      margin-bottom: $spacing-unit * 2;
+
+      &-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: $spacing-unit;
+        animation: fadeIn 0.5s ease-out;
+        animation-fill-mode: both;
+        
+        @for $i from 1 through 4 {
+          &:nth-child(#{$i}) {
+            animation-delay: #{$i * 0.1}s;
+          }
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+          margin-right: $spacing-unit;
+          transition: transform 0.3s ease;
+        }
+
+        &:hover svg {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  &__main {
+    flex: 1;
+    padding: $spacing-unit * 2;
+    animation: fadeIn 0.8s ease-out;
+
+    &-header {
+      margin-bottom: $spacing-unit * 3;
+      animation: slideIn 0.6s ease-out;
+
+      h1 {
+        font-size: $font-size-h1;
+        margin-bottom: $spacing-unit;
+      }
+
+      h2 {
+        color: $color-secondary;
+        font-weight: normal;
+      }
+    }
+
+    &-section {
+      margin-bottom: $spacing-unit * 3;
+      animation: fadeIn 0.5s ease-out;
+      animation-fill-mode: both;
+
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+          animation-delay: #{($i * 0.15) + 0.3}s;
+        }
+      }
+
+      h2 {
+        font-size: $font-size-h2;
+        margin-bottom: $spacing-unit * 2;
+        position: relative;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -$spacing-unit;
+          left: 0;
+          width: 50px;
+          height: 2px;
+          background: $color-primary;
+          transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+          width: 100px;
+        }
+      }
+    }
+
+    &-experience-item {
+      margin-bottom: $spacing-unit * 2;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateX(10px);
+      }
+    }
+  }
+}
+
+// Media query for responsive design
+@media (max-width: 768px) {
+  .resume {
+    flex-direction: column;
+    margin: 1rem;
+
+    &__sidebar {
+      flex: 0 0 auto;
+    }
+  }
+}

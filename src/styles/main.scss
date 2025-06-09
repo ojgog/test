@@ -1,0 +1,14 @@
+@forward './base/variables';
+@use './base/reset' as *;
+@use './base/animations' as *;
+@use './components/resume' as *;
+
+// Additional global styles
+body {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
