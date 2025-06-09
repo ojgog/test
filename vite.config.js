@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/test/', // Repository name
+  base: '/test/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
