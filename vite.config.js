@@ -1,16 +1,20 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/test/',
+  base: './',
   build: {
-    outDir: 'dist',
+    outDir: '.',
     assetsDir: 'assets',
-    sourcemap: false,
+    sourcemap: true,
+    emptyOutDir: false,
     rollupOptions: {
+      input: {
+        main: './index.html',
+      },
       output: {
-        entryFileNames: `assets/[name].[hash].js`,
-        chunkFileNames: `assets/[name].[hash].js`,
-        assetFileNames: `assets/[name].[hash].[ext]`
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash][extname]'
       }
     }
   }
