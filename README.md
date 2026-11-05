@@ -1,39 +1,38 @@
-# Animated Resume Template
+# Personal Profile
 
-A modern, responsive resume template built with Vite, SCSS, and BEM methodology. Features smooth animations and a clean design.
+A responsive profile website for Heorhi Kheladze, a Computer Science student at WSB Merito University in Gdańsk.
 
-## Features
+## Built with
 
-- 🎨 Modern and clean design
-- ✨ Smooth animations and transitions
-- 📱 Fully responsive
-- 🎯 BEM methodology
-- 🛠 Built with Vite and SCSS
-- 🚀 GitHub Pages deployment ready
+- HTML
+- SCSS
+- JavaScript
+- Vite
 
-## Development
+## Running locally
+
+Requires Node.js and npm.
 
 ```bash
-# Install dependencies
-npm install
-
-# Start development server
+npm ci
 npm run dev
-
-# Build for production
-npm run build
 ```
 
-## Customization
+To create a production build:
 
-- Edit `src/styles/base/_variables.scss` to customize colors, fonts, and spacing
-- Modify animations in `src/styles/base/_animations.scss`
-- Update content in `index.html`
+```bash
+npm run build
+npm run preview
+```
+
+## Project structure
+
+- `index.html` — page content
+- `src/styles/` — styling and responsive layout
+- `src/main.js` — application entry point
+- `public/favicon.svg` — favicon
+- `.github/workflows/build.yml` — GitHub Pages deployment
 
 ## Deployment
 
-The site is automatically deployed to GitHub Pages when pushing to the main branch.
-
-## License
-
-MIT
+Pushing to `main` triggers the GitHub Actions workflow, which publishes the `dist` folder to the `gh-pages` branch. To publish it, select **Settings → Pages → Deploy from a branch → gh-pages / (root)**.
