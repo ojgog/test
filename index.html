@@ -1,145 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./assets/vite.DcBtz0py.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Olivia Wilson - Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="./assets/main.DrnY1Pik.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main.VCDdaXyD.css">
+    <meta name="description" content="Personal website of Heorhi Kheladze, a Computer Science student based in Gdańsk." />
+    <meta name="theme-color" content="#183153" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>Heorhi Kheladze | Computer Science Student</title>
+    <script type="module" crossorigin src="./assets/index-DavPbhpd.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Bt_GYczg.css">
   </head>
   <body>
-    <div class="resume">
-      <div class="resume__sidebar">
-        <img src="data:image/jpeg;base64,cGxhY2Vob2xkZXIK" alt="Olivia Wilson" class="resume__sidebar-image">
-        <div class="resume__sidebar-contact">
-          <div class="resume__sidebar-contact-item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
-            </svg>
-            +123-456-7890
-          </div>
-          <div class="resume__sidebar-contact-item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <path d="M22 6l-10 7L2 6"/>
-            </svg>
-            hello@reallygreatsite.com
-          </div>
-          <div class="resume__sidebar-contact-item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              <path d="M12 8v4l3 3"/>
-            </svg>
-            www.reallygreatsite.com
-          </div>
-          <div class="resume__sidebar-contact-item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-            123 Anywhere St, Any City
-          </div>
-        </div>
-        <div class="resume__sidebar-section">
-          <h2>Education</h2>
-          <div class="resume__sidebar-education">
-            <h3>Bachelor of Design</h3>
-            <p>Wardiere University</p>
-            <p>2006 - 2008</p>
-          </div>
-        </div>
-        <div class="resume__sidebar-section">
-          <h2>Expertise</h2>
-          <ul class="resume__sidebar-expertise">
-            <li>Digital Marketing</li>
-            <li>Branding</li>
-            <li>Copywriting</li>
-            <li>SEO</li>
+    <main class="resume" aria-label="Student profile">
+      <aside class="resume__sidebar" aria-label="Profile details">
+        <div class="resume__monogram" aria-hidden="true">HK</div>
+        <p class="resume__eyebrow">Computer Science Student</p>
+        <h2 class="resume__side-name">Heorhi Kheladze</h2>
+        <p class="resume__location">Gdańsk, Poland<br />Originally from Grodno, Belarus</p>
+
+        <section class="resume__sidebar-section" aria-labelledby="skills-heading">
+          <h3 id="skills-heading">Technical skills</h3>
+          <ul class="resume__skill-list">
+            <li><strong>C#</strong><span>Basic knowledge</span></li>
+            <li><strong>SQL</strong><span>Fundamentals</span></li>
+            <li><strong>Python</strong><span>Currently learning</span></li>
+            <li><strong>Excel</strong><span>Data preparation</span></li>
+            <li><strong>GitHub &amp; Linux</strong><span>Basic familiarity</span></li>
           </ul>
-        </div>
-        <div class="resume__sidebar-section">
-          <h2>Language</h2>
-          <ul class="resume__sidebar-language">
-            <li>English</li>
-            <li>French</li>
+        </section>
+
+        <section class="resume__sidebar-section" aria-labelledby="languages-heading">
+          <h3 id="languages-heading">Languages</h3>
+          <ul class="resume__list">
+            <li>Russian — Native</li>
+            <li>Belarusian — Native</li>
+            <li>Polish — B2</li>
+            <li>English — B2</li>
           </ul>
-        </div>
-      </div>
+        </section>
+
+        <section class="resume__sidebar-section" aria-labelledby="link-heading">
+          <h3 id="link-heading">Find me online</h3>
+          <a class="resume__link" href="https://github.com/ojgog" target="_blank" rel="noopener noreferrer">github.com/ojgog <span aria-hidden="true">↗</span></a>
+        </section>
+      </aside>
+
       <div class="resume__main">
-        <div class="resume__main-header">
-          <h1>OLIVIA WILSON</h1>
-          <h2>Graphics Designer</h2>
-        </div>
-        <div class="resume__main-section">
-          <h2>Profile</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div class="resume__main-section">
-          <h2>Work Experience</h2>
-          <div class="resume__main-experience">
-            <div class="resume__main-experience-item">
-              <h3>Ginyard International Co.</h3>
-              <div class="resume__main-experience-item-date">2020 - 2023</div>
-              <p>Product Design Manager</p>
-              <ul>
-                <li>Working with the wider development team.</li>
-                <li>Manage website design, content, and SEO Marketing.</li>
-                <li>Branding and Logo Design</li>
-              </ul>
-            </div>
-            <div class="resume__main-experience-item">
-              <h3>Arowwal Industries</h3>
-              <div class="resume__main-experience-item-date">2019 - 2020</div>
-              <p>Product Design Manager</p>
-              <ul>
-                <li>Working with the wider development team.</li>
-                <li>Manage website design, content, and SEO Marketing.</li>
-                <li>Branding and Logo Design</li>
-              </ul>
-            </div>
-            <div class="resume__main-experience-item">
-              <h3>Ginyard International Co.</h3>
-              <div class="resume__main-experience-item-date">2017 - 2019</div>
-              <p>Product Design Manager</p>
-              <ul>
-                <li>Working with the wider development team.</li>
-                <li>Manage website design, content, and SEO Marketing.</li>
-                <li>Branding and Logo Design</li>
-              </ul>
-            </div>
+        <header class="resume__main-header">
+          <p class="resume__eyebrow">Programming · Data · Software Testing</p>
+          <h1>Hi, I'm Heorhi.</h1>
+          <p class="resume__subtitle">Learning programming, exploring software development and data.</p>
+        </header>
+
+        <section class="resume__main-section" aria-labelledby="about-heading">
+          <h2 id="about-heading">About me</h2>
+          <p>I'm a third-year Computer Science student on the Programming study path at WSB Merito University in Gdańsk. I studied C# and SQL at university and I'm currently building my Python skills. I'm interested in software development, software testing, and working with data.</p>
+          <p>I have worked on data analysis in university projects and enjoy learning new technologies through practical tasks.</p>
+        </section>
+
+        <section class="resume__main-section" aria-labelledby="education-heading">
+          <h2 id="education-heading">Education</h2>
+          <div class="resume__entry">
+            <div class="resume__entry-top"><h3>WSB Merito University in Gdańsk</h3><span>2026 – Present</span></div>
+            <p>Computer Science · Engineering Degree Programme · Programming study path</p>
           </div>
-        </div>
-        <div class="resume__main-section">
-          <h2>References</h2>
-          <div class="resume__main-references">
-            <div class="reference">
-              <h3>Bailey Dupont</h3>
-              <p>Wardiere Inc. / CEO</p>
-              <p>Phone: 123-456-7890</p>
-              <p>Email: hello@reallygreatsite.com</p>
-            </div>
-            <div class="reference">
-              <h3>Harumi Kobayashi</h3>
-              <p>Wardiere Inc. / CEO</p>
-              <p>Phone: 123-456-7890</p>
-              <p>Email: hello@reallygreatsite.com</p>
-            </div>
+          <div class="resume__entry">
+            <div class="resume__entry-top"><h3>Pomeranian University in Słupsk</h3><span>2024 – 2026</span></div>
+            <p>Computer Science · Completed the first three semesters before transferring</p>
           </div>
-        </div>
+        </section>
+
+        <section class="resume__main-section" aria-labelledby="project-heading">
+          <h2 id="project-heading">Academic project</h2>
+          <div class="resume__entry">
+            <div class="resume__entry-top"><h3>Diabetes and Obesity: Global Data Analysis</h3><span>Team of three</span></div>
+            <p>Collaborated on a university research project using public health datasets from WHO, World Bank, Eurostat, and OECD.</p>
+            <ul class="resume__bullet-list">
+              <li>Proposed the topic and helped collect, clean, and organize data in Excel.</li>
+              <li>Participated in data analysis, visualizations, and preparation of the presentation.</li>
+              <li>Presented the findings with the team; the project was selected for display at the university.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="resume__main-section" aria-labelledby="experience-heading">
+          <h2 id="experience-heading">Additional experience</h2>
+          <div class="resume__entry">
+            <div class="resume__entry-top"><h3>Children's robotics and programming activities</h3><span>~1 year</span></div>
+            <p>Helped children understand introductory programming and robotics through practical activities in Belarus.</p>
+          </div>
+        </section>
+        <footer class="resume__footer">Personal website · HTML, SCSS, JavaScript, Vite</footer>
       </div>
-    </div>
-  </body>
-</html>l>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./assets/vite.DcBtz0py.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
+    </main>
   </body>
 </html>
